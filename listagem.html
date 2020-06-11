@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Listagem de Produtos</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- Importações CSS -->
+        <link rel="stylesheet" href="css/bootstrap-4.1.2.css">
+        <link rel="stylesheet" href="css/jquery-ui-1.12.1.css">
+        <link rel="stylesheet" href="css/estilo.css">
+        <!-- Importações JS -->
+        <script type="text/javascript" src="jquery/jquery-3.3.1.js"></script>
+        <script type="text/javascript" src="jquery/jquery-ui-1.12.1.js"></script>
+        <script type="text/javascript" src="jquery/jquery.maskMoney-3.1.1.js"></script> 
+        <script type="text/javascript" src="js/cadastro.js"></script>
+        <script type="text/javascript" src="js/valida.js"></script>
+    </head>
+    <body>
+        <div id="listagem" class="container-fluid">
+            <div class="row">
+                <div class="col titulo">
+                    <h1 class="display-4" id="mudarTabela">Listagem de Produtos</h1>
+                </div>
+            </div>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item active" aria-current="page">Listagem de Produtos</li>
+                </ol>
+            </nav>
+            <div class="row">
+                <div class="col-sm-2">
+                    <div class="menu nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                      <a href="cadastro.html" class="nav-link" data-toggle="pill" role="tab">Cadastro</a>
+                      <a href="listagem.html" class="nav-link active" data-toggle="pill" role="tab">Listagem</a>
+                      <a href="sobre.html" class="nav-link" data-toggle="pill" role="tab">Sobre</a> 
+                    </div>
+                </div>
+                <div class="col-sm-9">
+                    <table class="table table-striped" id="tbLista"></table>
+                    <div id="divPopularLS" style="text-align: center">
+                        <br><br><h2>Adicionar itens à tabela</h2><br>
+                        <a href=""> 
+                            <img id="btnPopularLS" src="img/dados.png" alt="Botão Popular LocalStorage"/>
+                        </a> 
+                    </div>
+                    <!-- Exclusão com Modal UI JQuery -->
+                    <div id="msgExcluir" title="Confirma a exclusão?"></div>
+                </div>
+            </div>
+        </div>       
+    </body>
+    <script>
+        // Limpa parâmetros na URL vindas da edição da página de cadastro 
+        window.history.replaceState("Object", "Listagem", "/desafio-vaga-programador/listagem.html");
+    </script>
+</html>

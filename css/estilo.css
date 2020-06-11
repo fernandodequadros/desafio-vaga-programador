@@ -1,0 +1,40 @@
+/* Sem margem */
+html, body{
+  margin: -8px 0 0 -8px;
+}
+/* Texto do titulo */
+h1{
+  padding-top: 66px;
+  text-align: center;
+}
+/* Formata texto: "Adicionar itens à tabela" */
+h2{
+  color: green;
+  font-style: italic;
+  font-weight: bold;
+}
+/* Cor de fundo do cabeçalho da tabela */
+thead{
+  background-color: #969696;
+}
+/* Remove sublinhado dos ícones */
+a:link { 
+  text-decoration:none; 
+ }
+/* Altura do titulo */
+.titulo{
+  height: 200px;
+}
+/* Ao passar o mouse nos itens do menu */
+.menu a:hover{
+  color: black;
+  font-weight: bold;
+}
+/* Centraliza textos da tabela */
+.centralizar{
+  text-align: center;
+}
+/* Espaçamento da tabela */
+#frmCadastro{
+  padding-left: 18px;
+}
